@@ -1,5 +1,6 @@
-devcert-cli
-===========
+# devcert-cli
+
+I have modified this to fix some bugs that have not yet been fixed. Unmerged pull requests to set the CA to expire in 7000 days and to fix the NSS check on Mac have been merged to my own fork, and changed to be the new devcert dependency.
 
 A CLI wrapper for devcert, to manage development SSL/TLS certificates and domains
 
@@ -8,11 +9,15 @@ A CLI wrapper for devcert, to manage development SSL/TLS certificates and domain
 [![License](https://img.shields.io/npm/l/devcert-cli.svg)](https://github.com/davewasmer/devcert-cli/blob/master/package.json)
 
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
-<!-- tocstop -->
+
+- [Usage](#usage)
+- [Commands](#commands)
+  <!-- tocstop -->
+
 # Usage
+
 <!-- usage -->
+
 ```sh-session
 $ npm install -g devcert-cli
 $ devcert COMMAND
@@ -24,13 +29,17 @@ USAGE
   $ devcert COMMAND
 ...
 ```
+
 <!-- usagestop -->
+
 # Commands
+
 <!-- commands -->
-* [devcert disable [DOMAIN]](#devcert-disable-domain)
-* [devcert generate [DOMAIN]](#devcert-generate-domain)
-* [devcert help [COMMAND]](#devcert-help-command)
-* [devcert list](#devcert-list)
+
+- [devcert disable [DOMAIN]](#devcert-disable-domain)
+- [devcert generate [DOMAIN]](#devcert-generate-domain)
+- [devcert help [COMMAND]](#devcert-help-command)
+- [devcert list](#devcert-list)
 
 ## devcert disable [DOMAIN]
 
@@ -92,4 +101,5 @@ EXAMPLE
 ```
 
 _See code: [src/commands/list.ts](https://github.com/davewasmer/devcert-cli/blob/v1.0.0/src/commands/list.ts)_
+
 <!-- commandsstop -->
