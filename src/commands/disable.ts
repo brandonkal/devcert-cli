@@ -1,5 +1,5 @@
-import { removeDomain, hasCertificateFor } from 'devcert';
 import { Command, flags } from '@oclif/command'
+import { removeDomain, hasCertificateFor } from '@brandonkal/devcert'
 import { writeFileSync as write } from 'fs'
 
 export default class Generate extends Command {

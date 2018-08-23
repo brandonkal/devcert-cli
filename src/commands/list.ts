@@ -1,5 +1,5 @@
 import { Command } from '@oclif/command';
-import { configuredDomains } from 'devcert';
+import { configuredDomains } from '@brandonkal/devcert';
 
 export default class List extends Command {
 

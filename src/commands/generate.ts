@@ -1,5 +1,5 @@
 import { Command, flags } from '@oclif/command';
-import { certificateFor } from 'devcert';
+import { certificateFor } from '@brandonkal/devcert';
 import { writeFileSync as write } from 'fs';
 
 export default class Generate extends Command {
